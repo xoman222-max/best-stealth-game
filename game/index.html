@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shadow Courier — a stealth game</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="game" width="960" height="640"></canvas>
+
+  <div id="hud">
+    <div class="hud-left">
+      <span id="hud-level">LEVEL 1 — THE DEPOT</span>
+      <span id="hud-parcels" class="pill">◆ 0 / 3 parcels</span>
+      <span id="hud-decoys" class="pill">● 3 coins</span>
+    </div>
+    <div class="hud-right">
+      <span id="hud-alert" class="pill calm">CALM</span>
+      <span id="hud-time" class="pill">00:00</span>
+    </div>
+  </div>
+
+  <div id="hintbar">
+    <span><b>WASD / ←↑→↓</b> move</span>
+    <span><b>Shift</b> sneak</span>
+    <span><b>Click</b> toss a coin</span>
+    <span><b>M</b> mute</span>
+    <span><b>P</b> pause</span>
+    <span><b>R</b> restart level</span>
+  </div>
+
+  <div id="toast"></div>
+
+  <div id="overlay" class="show">
+    <div id="overlay-card"></div>
+  </div>
+</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
